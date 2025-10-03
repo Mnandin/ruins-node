@@ -203,8 +203,7 @@ io.on('connection', socket => {
   socket.on('disconnecting', handleDisconnect)
 })
 
-const port = 3002;
-// const port = process.env.WEB_PORT || 3002;
+const port = process.env.PORT || 3002;
 
 server.listen(port, () => {
   console.log(`server started at ${port}`);
