@@ -8,7 +8,6 @@ import cartRouter from "./routes/kevin/cart.js";
 import productRouter from "./routes/kevin/product.js";
 import memberRouter from "./routes/linda/member.js";
 import tourRouter from "./routes/tony/tour.js";
-import chatRouter from "./routes/tyler/server.js";
 import db from "./utils/mysql2-connect.js";
 
 const app = express();
@@ -45,7 +44,6 @@ app.use("/cart", cartRouter);
 app.use("/game", gameRouter);
 app.use("/tour", tourRouter);
 // 聊天室路由
-app.use("/chat", chatRouter);
 app.use("/community", communityRouter);
 app.use("/community", communityRouterTwo);
 app.use("/community", communityRouterThree);
